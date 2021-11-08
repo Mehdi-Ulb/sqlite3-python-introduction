@@ -32,7 +32,8 @@ def insert_record(id, name, division, stars):
 
 
 
-# How to fetch and display records from the employee_records table created in the above example.
+# This is how to fetch and display records
+# from the employee_records table created in the above example.
 
 def read_data():
     query = '''SELECT * FROM employee_records ORDER BY NAME'''
@@ -41,8 +42,9 @@ def read_data():
 
 
 #insert_record(8, 'Romain', 'Hardware', 5)
-# Following Python function shows
-# how to use UPDATE statement to update any record
+
+# Following Python function,
+# it shows how to use UPDATE statement in order to update any record
 def update_record(id,stars):
     dbase.execute('UPDATE employee_records set STARS=' + str(stars) + ' WHERE ID=' + str(id))
     dbase.commit()

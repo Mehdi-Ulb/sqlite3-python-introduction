@@ -28,7 +28,7 @@ def insert_record(id, name, division, stars):
 #insert_record(8, 'Romain', 'Hardware', 5)
 #insert_record(9, 'Elise', 'HR', 3)
 
-# How to fetch and display records from the employee_records table created in the above example.
+# This is how to fetch and display records from the employee_records table created in the above example.
 def read_data():
     data = dbase.execute(''' SELECT * FROM employee_records ORDER BY NAME''')
     pprint(data)
