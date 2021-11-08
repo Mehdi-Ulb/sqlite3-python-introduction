@@ -45,7 +45,6 @@ def read_data():
 # it shows how to use DELETE statement in order to delete any record
 def delete_record(id):
     dbase.execute(''' DELETE from employee_records WHERE ID =''' + str(id))
-    dbase.commit()
     print('Deleted')
 
 

@@ -47,7 +47,6 @@ def read_data():
 # it shows how to use UPDATE statement in order to update any record
 def update_record(id,stars):
     dbase.execute('UPDATE employee_records set STARS=' + str(stars) + ' WHERE ID=' + str(id))
-    dbase.commit()
     print("Updated")
 
 
