@@ -45,7 +45,6 @@ def read_data():
 def read_data_filter(id):
     query = 'SELECT * FROM employee_records WHERE ID=' + str(id) + ' ORDER BY NAME '
     results = pd.read_sql_query(query, dbase)
-    print()
     print(results)
 
 
