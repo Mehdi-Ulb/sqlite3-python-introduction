@@ -42,7 +42,7 @@ def read_data():
 
 #insert_record(8, 'Romain', 'Hardware', 5)
 # Following Python function shows
-# how to use UPDATE statement to update any record
+# how to use DELETE statement to delete any record
 def delete_record(id):
     dbase.execute(''' DELETE from employee_records WHERE ID =''' + str(id))
     dbase.commit()
