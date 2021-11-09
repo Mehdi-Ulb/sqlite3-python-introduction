@@ -36,8 +36,13 @@ dbase.execute('''
 
 def insert_contracts(companies_id, signed_off):
     dbase.execute('''
-            INSERT INTO Contracts(companies_id,signed_off)
-            VALUES(?,?)''', (companies_id, signed_off))
+    
+            INSERT INTO Contracts(
+                companies_id,signed_off)
+            VALUES(?,?)
+                ''', (companies_id, signed_off)
+
+                  )
     print("Record inserted")
 
 
