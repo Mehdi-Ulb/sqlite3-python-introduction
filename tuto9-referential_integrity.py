@@ -5,6 +5,10 @@ print('Database opened')
 
 # Enable Referential Integrity Check. (Mandatory for the project)
 dbase.execute("PRAGMA foreign_keys = 1")
+# By telling SQLite to check for foreign keys, you are enforcing referential integrity
+# This means that ensuring that the relationships between tables are appropriate).
+# So, if a value appears as a foreign key in one table,
+# it must also appear as the primary key of a record in the referenced table.
 
 
 # Companies
