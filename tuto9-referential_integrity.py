@@ -27,9 +27,6 @@ dbase.execute('''
         )''')
 print("Table Companies created successfully")
 
-# PRAGMA foreign_keys;
-# PRAGMA foreign_keys = ON;
-
 dbase.execute(''' 
                 INSERT INTO Companies
                 (name, info)
@@ -45,7 +42,8 @@ def insert_contracts(companies_id, signed_off):
 
 
 insert_contracts(1, '2021-11-09')
-insert_contracts(18, '2021-11-10')
+# Test - referential integrity
+insert_contracts(1800, '2021-11-10')
 
 
 dbase.close()
