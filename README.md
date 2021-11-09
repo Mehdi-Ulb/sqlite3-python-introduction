@@ -14,9 +14,10 @@ With SQLite3 :
 - Tuto 7 - Deleting a record
 - Tuto 9 - Referential integrity
 
-_Valentin Dirken_
 
 DrawSQL : 
 [https://drawsql.app/ulb-63/diagrams/sqlite3-python-introduction#
 ](https://drawsql.app/ulb-63/diagrams/sqlite3-python-introduction#)
 
+**Q/A** : 
+_Valentin Dirken_
