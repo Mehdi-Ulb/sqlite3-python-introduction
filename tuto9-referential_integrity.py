@@ -1,9 +1,11 @@
 import sqlite3
 dbase = sqlite3.connect('project_database.db', isolation_level=None)
+print('Database opened')
+
+
 # Enable Referential Integrity Check. (Mandatory for the project)
 dbase.execute("PRAGMA foreign_keys = 1")
 
-print('Database opened')
 
 # Companies
 dbase.execute(''' 
