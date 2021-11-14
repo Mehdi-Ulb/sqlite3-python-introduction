@@ -97,6 +97,16 @@ for line in records:
     print(str(line[1]) + " is the name")
     print(str(line[2]) + " is the firstname")
 
+# ------------------
+# The current tuple is: (1, 'Georges', 'Clooney')
+# 1 is the employee_id
+# Georges is the name
+# Clooney is the firstname
+# ------------------
+# The current tuple is: (2, 'Brad', 'Pitt')
+# 2 is the employee_id
+# Brad is the name
+# Pitt is the firstname
 
 # Don't forget to close the connection between your python code and the SQLite database.
 dbase.close()
