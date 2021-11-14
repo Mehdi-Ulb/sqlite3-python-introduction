@@ -82,7 +82,7 @@ print(str(records[0]))
 #   employee_id = 0
 #   firstname = 1
 #   name = 2
-# it's like a matrix. First record (0), second element of the record (1).
+# it's like a matrix. First record/tuple (0), second element of the record/tuple, so it's the "name" column (1).
 print(str(records[0][1]))
 
 # As an exercise, test with the second tuple, and the "name" column (3rd column).
