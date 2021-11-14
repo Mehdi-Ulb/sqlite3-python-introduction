@@ -7,7 +7,7 @@ from pprint import pprint
 dbase = sqlite3.connect('project_database.db', isolation_level=None)
 print('Database opened')
 
-dbase.execute('''DROP TABLE IF EXISTS employee_records''')
+dbase.execute('''DROP TABLE employee_records''')
 
 # 1. FIRST STEP - CREATE THE TABLE WITH "CREATE TABLE"
 # When the above program is executed,
@@ -22,12 +22,12 @@ print("Table created successfully")
 
 
 # 2. SECOND STEP - INSERT VALUES IN THE TABLE WITH "INSERT INTO"
-def insert_record(firstname,name):
+def insert_record(firstname, name):
     dbase.execute(
                     ''' 
                     INSERT INTO employee_records(firstname,name)
                     VALUES(?,?)
-                    ''', (firstname,name))
+                    ''', (firstname, name))
 
 
     # print name and firstname in the terminal.
@@ -94,19 +94,19 @@ for line in records:
     print("------------------")
     print("The current tuple is: " + str(line))
     print(str(line[0]) + " is the employee_id")
-    print(str(line[1]) + " is the name")
-    print(str(line[2]) + " is the firstname")
+    print(str(line[1]) + " is the firstname")
+    print(str(line[2]) + " is the name")
 
 # ------------------
 # The current tuple is: (1, 'Georges', 'Clooney')
 # 1 is the employee_id
-# Georges is the name
-# Clooney is the firstname
+# Georges is the firstname
+# Clooney is the name
 # ------------------
 # The current tuple is: (2, 'Brad', 'Pitt')
 # 2 is the employee_id
-# Brad is the name
-# Pitt is the firstname
+# Brad is the firstname
+# Pitt is the name
 
 # Don't forget to close the connection between your python code and the SQLite database.
 dbase.close()
