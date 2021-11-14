@@ -83,7 +83,7 @@ print(str(records[0]))
 # it's like a matrix. First record (0), second element of the record (1).
 print(str(records[0][1]))
 
-# As an exercise, test with the second tuple, and the "name" column.
+# As an exercise, test with the second tuple, and the "name" column (3rd column).
 # Answer is : print(str(records[1][2]))
 
 
