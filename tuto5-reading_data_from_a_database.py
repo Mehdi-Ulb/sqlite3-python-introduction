@@ -30,7 +30,6 @@ def insert_record(firstname, name):
                     VALUES(?,?)
                     ''', (firstname, name))
     print("Record inserted: " + str(name) + "_" + str(firstname))
-    return None
 # --------------------------------------------------
 
 # As a reminder :
