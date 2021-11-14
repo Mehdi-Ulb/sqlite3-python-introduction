@@ -7,7 +7,7 @@ import sqlite3
 dbase = sqlite3.connect('project_database.db', isolation_level=None)
 print('Database opened')
 
-dbase.execute('''DROP TABLE employee_records''')
+dbase.execute('''DROP TABLE IF EXISTS employee_records''')
 
 # 1. FIRST STEP - CREATE THE TABLE WITH "CREATE TABLE"
 # When the above program is executed,
