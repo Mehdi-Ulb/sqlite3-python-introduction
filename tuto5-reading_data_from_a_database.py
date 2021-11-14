@@ -33,8 +33,6 @@ def insert_record(firstname, name):
     # print name and firstname in the terminal.
     # Try to print employee_id. What do you have to do ?
     print("Record inserted: " + str(name) + "_" + str(firstname))
-    # Record inserted: Georges_Clooney
-    # Record inserted: Brad_Pitt
 
     # As a reminder :
     # str() is to convert a data into a string
