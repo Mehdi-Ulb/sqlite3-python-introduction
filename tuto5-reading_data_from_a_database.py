@@ -90,7 +90,7 @@ print(str(records[0][1]))
 # Now, we will go through each tuple of the list.
 # List? -> Use a "for" loop :)
 for line in records:
-    # record is recordS[0] then recordS[1]... until the end of the list.
+    # line is records[0] then records[1]... until the end of the list.
     print("------------------")
     print("The current tuple is: " + str(line))
     print(str(line[0]) + " is the employee_id")
