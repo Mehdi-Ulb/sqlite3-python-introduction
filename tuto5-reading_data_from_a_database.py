@@ -28,11 +28,8 @@ def insert_record(firstname, name):
                     INSERT INTO employee_records(firstname,name)
                     VALUES(?,?)
                     ''', (firstname, name))
-
-
-    # print name and firstname in the terminal.
-    # Try to print employee_id. What do you have to do ?
     print("Record inserted: " + str(name) + "_" + str(firstname))
+    return None
 
     # As a reminder :
     # str() is to convert a data into a string
@@ -42,9 +39,9 @@ def insert_record(firstname, name):
 # We call the function as many times as we need to insert records
 # Here, 2 times.
 insert_record('Georges', 'Clooney')
-# Record inserted: Georges_Clooney
+# output : Record inserted: Georges_Clooney
 insert_record('Brad', 'Pitt')
-# Record inserted: Brad_Pitt
+# output : Record inserted: Brad_Pitt
 
 
 # 3. THIRD STEP - READ VALUES WITH "SELECT"
