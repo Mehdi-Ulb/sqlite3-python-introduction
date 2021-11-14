@@ -72,7 +72,7 @@ print("We have a list [] of 2 tuples () : " + str(records))
 #   (2, 'Brad', 'Pitt')
 # ]
 
-print("Do you want to print the first tuple ?")
+# Do you want to print the first tuple (first record in your SELECT query) ?"
 # We must start with the number 0, because a list starts at 0 and not 1.
 print(str(records[0]))
 # (1, 'Georges', 'Clooney')
