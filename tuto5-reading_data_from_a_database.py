@@ -37,7 +37,7 @@ def insert_record(firstname, name):
     # Record inserted: Brad_Pitt
 
     # As a reminder :
-    # str() is to convert a data into a string.
+    # str() is to convert a data into a string
     # int() is to convert a data into a integer
 
 
@@ -62,6 +62,10 @@ def read_data_fetch():
 print("With the read_data_fetch function and for")
 # read_data_fetch() returns data. And the variable "records" contains the "return data"
 records = read_data_fetch()
+print("print records variable : " + str(records))
+print("print read_data_fetch() return data : " + str(read_data_fetch()))
+# It's easier to store the function return in a new variable like "records".
+
 
 print("We have a list [] of 2 tuples () : " + str(records))
 # [
@@ -76,7 +80,7 @@ print(str(records[0]))
 
 # Now, we want to access to the second element of the first tuple () ?
 # records[0] = the first tuple
-# records[0][1] = the first tuple and the firstname.
+# records[0][1] = firstname (second column) of the first tuple
 #   employee_id = 0
 #   firstname = 1
 #   name = 2
