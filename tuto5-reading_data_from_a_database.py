@@ -29,7 +29,7 @@ def insert_record(firstname, name):
                     INSERT INTO employee_records(firstname,name)
                     VALUES(?,?)
                     ''', (firstname, name))
-    print("Record inserted: " + str(name) + "_" + str(firstname))
+    return print("Record inserted: " + str(name) + "_" + str(firstname))
 # --------------------------------------------------
 
 # As a reminder :
