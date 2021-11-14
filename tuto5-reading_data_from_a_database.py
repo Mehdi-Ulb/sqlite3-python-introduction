@@ -22,6 +22,7 @@ print("Table created successfully")
 
 
 # 2. SECOND STEP - INSERT VALUES IN THE TABLE WITH "INSERT INTO"
+# --------------------------------------------------
 def insert_record(firstname, name):
     dbase.execute(
                     ''' 
@@ -30,10 +31,11 @@ def insert_record(firstname, name):
                     ''', (firstname, name))
     print("Record inserted: " + str(name) + "_" + str(firstname))
     return None
+# --------------------------------------------------
 
-    # As a reminder :
-    # str() is to convert a data into a string
-    # int() is to convert a data into a integer
+# As a reminder :
+# str() is to convert a data into a string
+# int() is to convert a data into a integer
 
 
 # We call the function as many times as we need to insert records
