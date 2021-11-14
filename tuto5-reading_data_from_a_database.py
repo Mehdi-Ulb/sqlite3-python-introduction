@@ -59,14 +59,15 @@ def read_data_fetch():
 
 
 # Now, we have to use the read_data_fetch() function.
-print("With the read_data_fetch function and for")
-# read_data_fetch() returns data. And the variable "records" contains the "return data"
-records = read_data_fetch()
-print("print records variable : " + str(records))
+print("Read data")
 print("print read_data_fetch() return data : " + str(read_data_fetch()))
-# It's easier to store the function return in a new variable like "records".
+# Ok it works !
 
+# But, it's easier to store the function return (output) in a new variable like "records".
+records = read_data_fetch()
+print(" 'records' variable contains : " + str(records))
 
+# So,
 print("We have a list [] of 2 tuples () : " + str(records))
 # [
 #   (1, 'Georges', 'Clooney'),
