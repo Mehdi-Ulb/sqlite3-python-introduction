@@ -65,7 +65,7 @@ print("print read_data_fetch() return data : " + str(read_data_fetch()))
 
 # But, it's easier to store the function return (output) in a new variable like "records".
 records = read_data_fetch()
-print(" 'records' variable contains : " + str(records))
+print("---records--- variable contains : " + str(records))
 
 # So,
 print("We have a list [] of 2 tuples () : " + str(records))
