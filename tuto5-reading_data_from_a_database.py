@@ -1,5 +1,5 @@
+# First, we need to import the sqlite3 library in order to interact with the SQLite Database.
 import sqlite3
-from pprint import pprint
 
 # We open a connection to the SQLite database file.
 # If the given database name does not exist then this call will create the database.
