@@ -1,3 +1,4 @@
+# Not included in the assessment scheduled for 23 November 2021
 import sqlite3
 import uvicorn
 from fastapi import FastAPI
