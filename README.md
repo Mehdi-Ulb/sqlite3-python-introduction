@@ -1,4 +1,12 @@
 # sqlite3-python-introduction
+**TUTO 10**
+
+Please use these links and not this code
+
+ Code :    https://github.com/chriscastan/digital_firm_tp-10
+
+
+ Theory :  https://doc.clickup.com/p/h/2fc07-21321/45536472e940cce/2fc07-21381
 
 With SQLite3 : 
 - Tuto 1 - Creating a database
