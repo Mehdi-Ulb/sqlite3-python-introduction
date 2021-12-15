@@ -1,0 +1,173 @@
+#####################
+# Register customer #
+#####################
+POST http://127.0.0.1:8000/register_customer HTTP/1.1
+Content-Type: application/json
+
+{
+    "Email": "marc.dubois@ulb.be",
+    "First_Name": "Marc",
+    "Last_Name" : "Dubois",
+    "Birth_Date" : "1999-05-26",
+    "Password" : "Eclair.124",
+    "Address" : "Avenue Buyl 13, 1000 Ixelles, BE",
+    "Billing_Address" : "Avenue Buyl 13, 1000 Ixelles, BE",
+    "Credit_Card" : "5301150401171979"
+}
+
+######################
+# Register a company #
+######################
+POST http://127.0.0.1:8000/register_company HTTP/1.1
+Content-Type: application/json
+
+{
+    "VAT_Number": "BE3333333333",
+    "Company_Name": "Delhaize",
+    "Address" : "Keelstraat 123, 1800 Vilvoorde, BE",
+    "Bank_Account" : "BE3422557266"
+}
+
+############################
+# Register a subscription  #
+############################
+POST http://127.0.0.1:8000/register_subscription HTTP/1.1
+Content-Type: application/json
+
+{
+    "Subscription_Name": "Amazon Prime Student",
+    "Single_Price": "3.99",
+    "Currency" : "EUR",
+    "Company_VAT_Number" : "BE555555555"
+}
+
+####################
+# Register a quote #
+####################
+POST http://127.0.0.1:8000/register_quote HTTP/1.1
+Content-Type: application/json
+
+{
+    "Subscription_Reference": "6",
+    "Quantity" : "6",
+    "Currency" : "EUR",
+    "Active" : "False"
+}
+
+##########################
+# Display specific quote #
+##########################
+GET http://127.0.0.1:8000/display_specific_quote HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "quote_id": "3"
+}
+
+###################################################
+# Accept quote -> automatically create an invoice #
+###################################################
+POST http://127.0.0.1:8000/accept_quote HTTP/1.1
+Content-Type: application/json
+
+{
+    "Quote_Reference": "8",
+    "Customer_Email" : "thien.huynh@ulb.be",
+    "End_Date" : "2030-10-09",
+    "Currency" : "EUR"
+}
+
+
+###########################################
+# Check if customer has a pending invoice #
+###########################################
+GET http://127.0.0.1:8000/check_pending_invoice HTTP/1.1
+Content-Type: application/json
+
+{
+    "Email" : "mehdi.karkour@ulb.be"
+}
+
+# "mehdi.karkour@ulb.be"
+# "noeline.deterwangne@ulb.be"
+# "yannick.lu@ulb.be"
+# "ilias.mahri@ulb.be"
+# "thien.huynh@ulb.be"
+# "ilias.mahri@ulb.be"
+
+######################################
+# Pay invoice by using CC in account #
+######################################
+POST http://127.0.0.1:8000/pay_invoice HTTP/1.1
+Content-Type: application/json
+
+{
+    "Invoice_Reference": "1",
+    "Customer_Email" : "mehdi.karkour@ulb.be",
+    "Amount_Paid_EUR" : "24.1758",
+    "Currency" : "JPY"
+}
+
+
+# USD
+# JPY
+# RUB
+# GBP
+
+#############################
+# Update CC and pay invoice #
+#############################
+POST http://127.0.0.1:8000/update_cc_and_pay_invoice HTTP/1.1
+Content-Type: application/json
+
+{
+    "Invoice_Reference": "2",
+    "Customer_Email" : "noeline.deterwangne@ulb.be",
+    "CC" : "5301150401171978",
+    "Amount_Paid_EUR" : "24.151600000000002",
+    "Currency" : "RUB"
+}
+
+#Valid CC : 5301150401171978
+#Invalid CC : 1111111111111111
+
+# USD
+# JPY
+# RUB
+# GBP
+############################################################################
+# Display MRR & ARR and the average revenue per customer for one compagnie #
+############################################################################
+POST http://127.0.0.1:8000/display_analytics HTTP/1.1
+Content-Type: application/json
+
+{
+    "Company_VAT_Number": "BE444444444",
+    "Choosen_Date": "2021-12-15"
+}
+
+
+##################################
+# Display client for one company #
+##################################
+POST http://127.0.0.1:8000/display_customer HTTP/1.1
+Content-Type: application/json
+
+{
+    "Company_VAT_Number": "BE444444444"
+}
+
+#"BE111111111"
+#"BE222222222"
+#"BE333333333"
+#"BE444444444"
+
+#################################################
+# Show customer and subscription for one company#
+#################################################
+POST http://127.0.0.1:8000/display_cust_sub HTTP/1.1
+Content-Type: application/json
+
+{
+    "Company_VAT_Number": "BE444444444"
+}
